@@ -4,9 +4,21 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-JEX4JP2G1E', { transport_url: 'http://localhost:8000' });
-  gtag('config', 'G-JEX4JP2G1E', {
-    'page_location': event.data.url,
-    transport_url: 'http://localhost:8000'
+  gtag('event', 'add_to_cart', {
+    currency: 'USD',
+    items: [{
+      id: "P12345",
+      name: "Android Warhol T-Shirt",
+      brand: "Google",
+      category: "Apparel/T-Shirts",
+      coupon: "SUMMER_DISCOUNT",
+      list_name: "Search Results",
+      list_position: 1,
+      price: 14.99,
+      quantity: 2,
+      variant: "Black"
+    }],
+    value: 29.98
   });
 </script>
 
