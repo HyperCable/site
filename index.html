@@ -1,5 +1,13 @@
-<script>alert(1)</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JEX4JP2G1E&l=dataLayer&cx=c&dbg=33"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-JEX4JP2G1E', { transport_url: 'http://localhost:8000' });
+  gtag('config', 'G-JEX4JP2G1E', {
+    'page_location': event.data.url,
+    transport_url: 'http://localhost:8000'
+  });
+</script>
 
-<body>
-  hello
-</body.
+GTM transport_url demo
