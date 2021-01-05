@@ -4,6 +4,16 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-JEX4JP2G1E', { transport_url: 'http://localhost:8000' });
+  
+gtag('set', 'user_properties', {
+  favorite_composer: 'Mahler',
+  favorite_instrument: 'double bass',
+  season_ticketholder: 'true'
+});
+  gtag('config',  {
+  'user_id': 'USER_ID'
+});
+  
   gtag('event', 'add_to_cart', {
     currency: 'USD',
     items: [{
