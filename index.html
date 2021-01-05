@@ -20,6 +20,164 @@
     }],
     value: 29.98
   });
+  
+  gtag('event', 'add_to_wishlist', {
+  currency: 'USD',
+  items: [{
+    id: "P12345",
+    name: "Android Warhol T-Shirt",
+    brand: "Google",
+    category: "Apparel/T-Shirts",
+    coupon: "SUMMER_DISCOUNT",
+    list_name: "Search Results",
+    list_position: 1,
+    price: 14.99,
+    quantity: 2,
+    variant: "Black"
+  }],
+  value: 29.98
+});
+  
+  gtag("event", "begin_checkout", {
+  value: 29.98,
+  coupon: "SUMMER_DISCOUNT",
+  currency: "USD",
+  items: [
+    {
+      id: "P12345",
+      name: "Android Warhol T-Shirt",
+      list_name: "Search Results",
+      brand: "Google",
+      category: "Apparel/T-Shirts",
+      coupon: "SUMMER_DISCOUNT",
+      variant: "Black",
+      list_position: 1,
+      quantity: 2,
+      price: 14.99
+    }
+  ]
+});
+  
+  gtag("event", "checkout_progress", {
+  coupon: "SUMMER_DISCOUNT",
+  currency: "USD",
+  checkout_option: "Google Pay",
+  checkout_step: 1,
+  value: 29.98,
+  items: [
+    {
+      id: "P12345",
+      name: "Android Warhol T-Shirt",
+      brand: "Google",
+      category: "Apparel/T-Shirts",
+      coupon: "SUMMER_DISCOUNT",
+      list_name: "Search Results",
+      list_position: 1,
+      price: 14.99,
+      quantity: 2,
+      variant: "Black"
+    }
+  ]
+});
+  
+  gtag('event', 'exception', {
+  description: 'Missing required field.',
+  fatal: true
+});
+  
+  gtag('event', 'generate_lead', {
+  currency: 'USD',
+  value: 99.99
+});
+  
+  gtag('event', 'login', {
+  method: 'Google'
+});
+  
+  gtag('event', 'page_view', {
+  page_location: 'https://example.com/about',
+  page_path: '/about',
+  page_title: 'About'
+});
+  
+  gtag("event", "purchase", {
+  affiliation: "Google online store",
+  coupon: "SUMMER_DISCOUNT",
+  currency: "USD",
+  shipping: 5.55,
+  tax: 3.33,
+  transaction_id: "T_1",
+  value: 28.86,
+  items: [
+    {
+      id: "P12345",
+      name: "Android Warhol T-Shirt",
+      coupon: "P12345_coupon",
+      list_name: "Search Results",
+      brand: "Google",
+      category: "Apparel/T-Shirts",
+      variant: "Black",
+      list_position: 3,
+      quantity: 1,
+      price: 9.99
+    },
+    {
+      id: "P12346",
+      name: "Flame challenge TShirt",
+      coupon: "P12346_coupon",
+      list_name: "Search Results",
+      brand: "MyBrand",
+      category: "Apparel/T-Shirts",
+      variant: "Red",
+      list_position: 5,
+      quantity: 1,
+      price: 9.99
+    }
+  ]
+});
+  
+  gtag('event', 'refund', {
+  coupon: "SUMMER_DISCOUNT",
+  currency: "USD",
+  shipping: 5.55,
+  tax: 3.33,
+  transaction_id: "T_12345",
+  value: 28.86,
+  items: [
+    {
+      id: "P12345",
+      coupon: "P12345_coupon",
+      name: "Android Warhol T-Shirt",
+      list_name: "Search Results",
+      brand: "Google",
+      category: "Apparel/T-Shirts",
+      variant: "Black",
+      list_position: 3,
+      quantity: 1,
+      price: 9.99
+    },
+    {
+      id: "P12346",
+      coupon: "P12346_coupon",
+      name: "Flame challenge TShirt",
+      list_name: "Search Results",
+      brand: "MyBrand",
+      category: "Apparel/T-Shirts",
+      variant: "Red",
+      list_position: 5,
+      quantity: 1,
+      price: 9.99
+    }
+  ]
+});
+  
+  gtag('event', 'screen_view', {
+  screen_name: 'About'
+});
+  
+  gtag('event', 'search', {
+  search_term: 't-shirts'
+});
 </script>
 
 GTM transport_url demo
