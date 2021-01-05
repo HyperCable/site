@@ -25,9 +25,10 @@
   value: 29.98,
   coupon: "SUMMER_DISCOUNT",
   currency: "USD",
-  i: [1,2,3],
-  j: {id: 111, name: 222},
-  items: [
+  i: JSON.stringify([1,2,3]),
+  j: JSON.stringify({id: 111, name: 222}),
+  k: 3,
+  items: JSON.stringify([
     {
       id: "P12345",
       name: "Android Warhol T-Shirt",
@@ -40,7 +41,7 @@
       quantity: 2,
       price: 14.99
     }
-  ]
+  ])
 });
   
   gtag('event', 'add_to_wishlist', {
